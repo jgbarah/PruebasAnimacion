@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <a-entity position="0 0.5 5.5 ">
+            <a-camera></a-camera>
+        </a-entity>
+
+        <a-assets>
+            <a-asset-item id="rueda" src="Rueda_Movil.glb"></a-asset-item>
+        </a-assets>
+        <a-entity position=".2 0.5 0" gltf-model="#rueda"
+                scale="0.1 0.2 0.2"
+            animation="property: rotation; dur: 10000;
+                       to: 0 360 0; loop: true">
+        </a-entity>
+        <a-sky color="grey"></a-sky>
+    </a-scene>
+  </body>
+</html>
