@@ -1,6 +1,7 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
   </head>
   <body>
     <a-scene>
@@ -12,7 +13,7 @@
             <a-asset-item id="rueda" src="Rueda_Movil.glb"></a-asset-item>
         </a-assets>
         <a-entity position=".2 0.5 0" gltf-model="#rueda"
-                scale="0.1 0.2 0.2"
+                scale="0.1 0.2 0.2" animation-mixer
             animation="property: rotation; dur: 10000;
                        to: 0 360 0; loop: true">
         </a-entity>
